@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rest in home</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./css/slick/slick-theme.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script type="text/javascript" src="/js/bin/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body class="mainBody">
+    <script> 
+        AOS.init(); 
+    </script>
+    <header>
+        <div class="head">
+            <h1><a>Rest<br>In<br>Home</a></h1>
+        </div>
+            <div class="gnb">
+                <div class="elec">
+                <div class="menu">
+                        <h2>가전</h2>
+                        <ul class="category">
+                            <h3><a>생활가전</a></h3>
+                            <li>TV</li>
+                            <li>세탁기/건조기</li>
+                            <li>에어컨</li>
+                            <li>선풍기</li>
+                            <li>컴퓨터/노트북</li>
+                            <li>스피커</li>
+                            <li>안마의자</li>
+                            <li>전화기</li>
+                    </ul>
+                    <ul class="category">
+                        <h3><a>주방가전</a></h3>
+                        <li>밥솥</li>
+                        <li>에어프라이어</li>
+                        <li>냉장고</li>
+                        <li>김치냉장고</li>
+                        <li>커피포트</li>
+                        <li>오븐</li>
+                        <li>전자레인지</li>
+                    </ul>
+                <ul class="category">
+                   <h3><a>가전렌탈</a></h3>
+                </ul>
+                <div class="line"></div>
+                    <h2>가구</h2>
+                    <ul class="category">
+                        <h3><a>생활가구</a></h3>
+                        <li>소파</li>
+                        <li>수납장</li>
+                        <li>의자</li>
+                        <li>침구</li>
+                        <li>책상</li>
+                        <li>테이블/화장대</li>
+                        <li>거울</li>
+                    </ul>
+                    <ul class="category">
+                        <h3><a>주방가구</a></h3>
+                        <li>식탁</li>
+                        <li>주방의자</li>
+                        <li>선반</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+        <div class="navIcon">
+            <div class="search Icon">
+                <!-- <i class="xi-search"></i>  -->
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="notice Icon">
+                <i class="fas fa-headphones-alt"></i>
+                <div class="inner">
+                    <ul>
+                        <li>F&Q</li>
+                        <li>공지사항</li>
+                        <li>오프라인매장</li>
+                        <li>고객센터</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="user Icon">
+                <i class="fas fa-user"></i>
+                <div class="inner">
+                    <ul>
+                        <li>로그인</li>
+                        <li>회원가입</li>
+                        <li>배송조회</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="basket Icon">
+                <i class="fas fa-shopping-bag"></i>
+            </div>
+            <div class="menuIcon">
+                <!-- <span>Menu</span> -->
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+    <div class="searchpopup">
+        <div class="searchinfo">
+        <div class="searchtext">
+            <i class="xi-close"></i>
+            <h1>SEARCH</h1>
+            <p>통합검색</p>
+            <span>원하시는 검색어를 입력해주세요</span>
+        </div>
+        <form>
+            <input type="text" placeholder="검색어를 입력하세요.">
+            <i class="xi-search"></i>
+        </form>
+        </div>
+    </div>
+    <div class="menuPopup">
+        <div class="menuInfo">
+        <div class="menuText">
+            <i class="xi-close"></i>
+            <ul class="allmenu">
+                <li>
+                    <a>생활가전</a>
+                    <ul class="menuTeb inMenu">
+                        <li>TV</li>
+                        <li>세탁기/건조기</li>
+                        <li>에어컨</li>
+                        <li>선풍기</li>
+                        <li>컴퓨터/노트북</li>
+                        <li>스피커</li>
+                        <li>안마의자</li>
+                        <li>전화기</li>
+                    </ul>
+                </li>
+                <li>
+                    <a>주방가전</a>
+                    <ul class="menuTeb inMenu2">
+                        <li>밥솥</li>
+                        <li>에어프라이어</li>
+                        <li>냉장고</li>
+                        <li>김치냉장고</li>
+                        <li>커피포트</li>
+                        <li>오븐</li>
+                        <li>전자레인지</li>
+                    </ul>
+                </li>
+                <li>
+                    <a>가전렌탈</a>
+                </li>
+                    <br>
+                <li>
+                        <a>생활가구</a>
+                        <ul class="menuTeb inMenu3">
+                            <li>소파</li>
+                            <li>수납장</li>
+                            <li>의자</li>
+                            <li>침구</li>
+                            <li>책상</li>
+                            <li>테이블/화장대</li>
+                            <li>거울</li>
+                        </ul>
+                </li>
+                <li>
+                    <a>주방가구</a>
+                    <ul class="menuTeb inMenu4">
+                        <li class="menuTitle">
+                        <li>식탁</li>
+                        <li>주방의자</li>
+                        <li>선반</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        </div>
+    </div>
+    <section class="mainHome">
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slider">
+                    <div class="mainText">
+                    <a>
+                        <h1>시원한 바람, 무더운 여름
+                            나의 하루가 지치지 않게<br>
+                            <span>에어컨</span>
+                        </h1>
+                        <p>여름에도 하루의 계획이 무너지지 않게
+                            집중할수 있는 여름 필수 가전
+                            에어컨을 구매하세요
+                        </p>
+                    </a>
+                    </div>
+                    <img src="/images/carrier.jpg">
+                </div>
+                </div>
+            <div class="swiper-slide">
+                <div class="slider">
+                    <div class="mainText">
+                    <a>
+                        <h1>요리 못하는 요린이들 에게 필수템!
+                            <span>에어프라이어</span>
+                        </h1>
+                        <p>10분 이내면 끝!아이, 어른 모두를 어우르는 빠르고 
+                            실속있는 간식에는 에어프라이어!
+                            새로운 제품들을 만나보세요
+                        </p>
+                    </a>
+                </div>
+                <img src="images/air-p.jpg">
+            </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slider">
+                <div class="mainText">
+                <a>
+                    <h1>집에만 있어도, 집에서도 분위기 있게<br>
+                        <span>생활가전</span>
+                    </h1>
+                    <p>테이블, 식탁보만 바뀌도 예쁘고 편하게
+                        쉴수있도록. 기분좋게 집콕 준비하기!
+                    </p>
+                </a>
+            </div>
+                <img src="images/optimize.jpg">
+        </div>
+        </div>
+        </div>
+            <div class="swiper-pagination"></div>
+        </div>
+</section>
+<div class="scroll">
+    <i class="xi-mouse"></i>
+    <span>scroll</span>
+</div>
+<ul class="itemsec" data-aos="fade-right" data-aos-duration="1000">
+    <li>
+        <img src="images/sub1.jpg">
+        <span><i class="xi-plus-thin"></i></span>
+        <div class="iteminfo">
+            <strong>NEW</strong>
+            <p>이태리에서 온 감성냉장고</p>
+            <h2>SMEG 냉장고</h2>
+            <h3>1,850,000 won</h3>
+        </div>
+    </li>
+    <li>
+        <img src="images/sub2.jpg">
+        <span><i class="xi-plus-thin"></i></span>
+        <div class="iteminfo">
+            <strong>NEW</strong>
+            <p>유럽풍의 심플한 디자인과 활용도 domo</p>
+            <h2>도모일렉트로 커피포트</h2>
+            <h3 id="text">65,000 won</h3>
+        </div>
+    </li>
+    <li>
+        <img src="images/sub3.jpg">
+        <span><i class="xi-plus-thin"></i></span>
+        <div class="iteminfo">
+            <strong>BEST</strong>
+            <p>작지만 강한 편안함을 지닌 ENNA의자</p>
+            <h2>ENNA 식탁의자</h2>
+            <h3>45,000 won</h3>
+        </div>
+    </li>
+</ul>
+<div id="text" class="container">
+        <div class="slider center">       
+            <div class="slide">
+              <div class="cl cl-one">
+                  <h1>건조기</h1>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="cl cl-two">
+                <h1>선풍기</h1>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="cl cl-three">
+                <h1>스피커</h1>
+              </div>
+            </div>
+          <div class="slide">
+              <div class="cl cl-four">
+                <h1>TV</h1>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="cl cl-five">
+                <h1>전자레인지</h1>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="cl cl-six">
+                <h1>커피머신</h1>
+              </div>
+            </div>
+            
+        </div>
+        <div class="pagination"></div>
+  </div>
+<div class="footer">
+    <div class="scrollTop">
+        <i class="xi-caret-up-min"></i>
+        <h3>TOP</h3>
+    </div>
+    <div class="footerText">
+        <div class="logo">
+            <h1><a>Rest<br>In<br>Home</a></h1>
+        </div>
+        <div class="footerInfo">
+            <strong>Information</strong>
+            <p>사업자 등록번호: 129-82-15268</p>
+            <p>주소: 경기도 구리시 수택동</p>
+            <p>대표자: 가나다</p>
+            <p>법인명: (주)레인홈</p>
+            <p>연락처: 1522-9182</p>
+        </div>
+        <div class="footerContact">
+            <strong>Contact</strong>
+            <p class="email">looluu@naver.com</p>
+            <div class="footerNotice">
+            <p>이용약관</p>
+            <p>개인정보 처리방침</p>
+            <p>자주 묻는 질문</p>
+        </div>
+        </div>
+        <!-- <div class="footerNotice">
+            <p>이용약관</p>
+            <p>개인정보 처리방침</p>
+            <p>자주 묻는 질문</p>
+        </div> -->
+        <div class="footerIcon">
+            <i class="xi-instagram"></i>
+            <i class="xi-facebook"></i>
+            <i class="xi-naver-square"></i>
+            <i class="xi-youtube-play"></i>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/js/main.js"></script>
+<script type="text/javascript" src="./js/bin/slick.js"></script>
+<script type="text/javascript" src="./js/bin/slick.min.js"></script>
+</body>
+</html>

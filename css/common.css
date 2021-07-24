@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700&family=Roboto+Mono:wght@400;500;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body {
+	margin: 0;
+	font-family: 'Roboto Mono', 'Noto Sans KR';
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+  }
+article, aside, details, figcaption, figure, footer, hgroup, menu, nav, section {
+	display: block;
+}
+div, span, article, section, header, footer, aside, p, ul, li, fieldset, legend, label, a, nav, form {
+	box-sizing: border-box;
+}
+ol, ul, li {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+input:focus {
+	outline:none;
+}
+body {
+	/* background-color: teal; */
+}
+
+  /*****************************************
+  *  --------------------------------------*
+  *  Slick                                 *
+  *  --------------------------------------*
+  *****************************************/
