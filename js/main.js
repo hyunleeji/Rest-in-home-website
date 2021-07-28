@@ -45,7 +45,7 @@ $(document).ready(function(){
           $(".searchpopup").css("top","0vh");
         });
         $('.xi-close').click(function () {
-          $(".searchpopup").css("top","-100vh");
+          $(".searchpopup").css("top","-110vh");
         });
       }
   });

@@ -299,7 +299,7 @@ i {
 }
 .menuInfo {
     position: relative;
-    top: 10%;
+    top: 15%;
     font-size: 3rem;
     max-width: 1000px;
     margin: 0 auto;
@@ -493,7 +493,7 @@ i {
   }
   .cl-three {
   background-image: url(../images/sound.jpg);
-  background-position: 180%;
+  background-position: 210%;
   }
   .cl-four {
   background-image: url(../images/tv.jpg);
