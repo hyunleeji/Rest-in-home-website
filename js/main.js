@@ -19,46 +19,35 @@ $(document).ready(function(){
 
     $('.menuIcon').click(function () {
         $(".menuPopup").css("opacity","1");
-        // $(".menuPopup").css("display","block");
         $(".menuPopup").css("z-index","97");
+        $(".menuPopup").css("width","100vw");
         $(".menuIcon").css("display","none");
     });
 
     $('.menuText .xi-close').click(function () {
         $(".menuPopup").css("opacity","0");
-        // $(".menuPopup").css("display","none");
         $(".menuPopup").css("z-index","-1");
         $(".menuIcon").css("display","block");
     });
 
+    $('.search').click(function () {
+      $(".searchpopup").css("top","0vh");
+    });
+    $('.xi-close').click(function () {
+      $(".searchpopup").css("top","-110vh");
+    });
+
     $(window).resize(function () {
       var width = $(window).width();
-      if (width>=1200) {
-          $('.search').click(function () {
-              $(".searchpopup").css("top","0vh");
-          });
-          $('.xi-close').click(function () {
-              $(".searchpopup").css("top","-80vh");
-          });
-      } else if (width <1200) {
+      if (width <1200) {
         $('.search').click(function () {
           $(".searchpopup").css("top","0vh");
         });
         $('.xi-close').click(function () {
-          $(".searchpopup").css("top","-110vh");
+          $(".searchpopup").css("top","-130vh");
         });
-      }
+      } 
   });
-
-    // $(window).resize(function () {
-    // $('.search').click(function () {
-    //     $(".searchpopup").css("top","0vh");
-    // });
-
-    // $('.xi-close').click(function () {
-    //     $(".searchpopup").css("top","-80vh");
-    // });
-    // )}
 
     $(window).scroll(function(){
 		if($(this).scrollTop() > 200){
@@ -135,25 +124,6 @@ $(document).ready(function(){
     })
   })
 
-
-  // $(function() {
-  //   $(".allmenu a").one("click", function() {
-  //     $(".allmenu").find(".menuTeb").css("display","block");
-  //     $(this).click(function() {
-  //       $('.menuTeb').css("display","none");
-  //     });
-  //   })
-  // })
-  
-  // $(function() {
-  //   $(".allmenu a").one("click", function() {
-  //     $(".allmenu").find(".menuTeb").css("display","block");
-  //     $(this).click(function() {
-  //       $('.menuTeb').css("display","none");
-  //     });
-  //   })
-  // })
-
   $('.menuPopup .menuText > .allmenu > li').each(function() {
     $(this).not('.link').children("a").off("click").on("click", function(e) {
       e.preventDefault();
@@ -171,58 +141,4 @@ $(document).ready(function(){
       };
     });
   });
-
-
-  // $(function() {
-  //   $(".allmenu a").on("mouseleave", function() {
-  //     $('.menuTeb').css("display","none");
-  //   })
-  // })
-
-
-  // $(function() {
-  //   $(".allmenu a").on("click", function() {
-  //     var inmenu = $(".allmenu").find('.menuTeb').stop().slideUp();
-  //     if (!inmenu.is(':visible')) {
-  //       $(".allmenu").find(".menuTeb").stop().slideUp();
-  //     }
-  //   })
-  // })
-
-  // $(function() {
-  //   $(".allmenu a").on("click", function() {
-  //     var inmenu = $(".inMenu").slideDown();
-  //   })
-  // })
-
-  // $(function() {
-  //   $(".manuTitle").on("click", function() {
-  //      var inmenu = $(".inMenu").siblings()
-  //      if (!inmenu.is(":visible")) {
-  //        $(".allmenu").find(".inMenu").stop().slideUp();
-  //        inmenu.stop().slideDown();
-  //        $(".manuTitle").removeClass("hover");
-  //        $(".manuTitle").addClass("hover");
-  //      } else {
-  //       $(".allmenu").find(".inMenu").stop().slideUp();
-  //       $(".manuTitle").removeClass("hover");
-  //      }
-  //   })
-  // })
-
-
-    // $(".category h3").on("mouseover", function() {
-    //     $(".category li").css("display", "block");
-    //     $(".gnb").css("background-color", "white");
-    //   });
-
-    // $(".category h3").on("mouseleave", function() {
-    //     $(".category li").css("opacity", "0");
-    //     $(".gnb").css("background-color", "transparent");
-    //     $(".gnb").css("box-shadow", "0px");
-    //   });
-
-    // $('.head a').click(function () {
-    //     $(this).animate({opacity:0, fontSize:'0px'}, 1500);
-    // });
 });

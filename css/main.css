@@ -234,7 +234,7 @@ i {
     margin-bottom: 3rem;
 }
 .menuPopup {
-    width: 100vw;
+    /* width: 100vw; */
     text-align: left;
     transform: translateY(-233px);
     background-color: #deb94f;
@@ -242,7 +242,7 @@ i {
     opacity: 0;
     transition: all 0.3s;
     position: absolute;
-    z-index: 97;
+    /* z-index: 97; */
     /* display: none; */
 }
 .hover {
@@ -818,6 +818,9 @@ i {
     }
     .searchinfo form i, .searchinfo .xi-close {
         font-size: 2rem;
+    }
+    .searchpopup {
+        height: 60vh;
     }
     .menuPopup {
         top: 25%;
