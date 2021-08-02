@@ -28,6 +28,7 @@ $(document).ready(function(){
         $(".menuPopup").css("opacity","0");
         $(".menuPopup").css("z-index","-1");
         $(".menuIcon").css("display","block");
+        $('.menuText > .allmenu').find('.menuTeb').stop().slideUp();
     });
 
     $('.search').click(function () {
