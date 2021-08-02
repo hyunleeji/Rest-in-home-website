@@ -308,6 +308,8 @@ i {
     float: right;
     transform: translateY(-50px);
     color: #3f320d;
+    position: relative;
+    top: -60px;
 }
 .scroll {
     text-align: center;
