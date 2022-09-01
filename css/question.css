@@ -1,0 +1,25 @@
+.question h1 {
+    font-size: 2rem;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    border-bottom: 4px solid #66cdaa;
+    text-align: center;
+    color: #66cdaa;
+}
+.qanda {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    /* color: #66cdaa; */
+}
+.showA {
+    margin: 2.5rem 0;
+}
+.showA i {
+    color: #66cdaa;
+}
+.answer {
+    display: none;
+    font-size: 1rem;
+    /* border-bottom: 1px solid #c9c9c9; */
+    padding: 2rem;
+}

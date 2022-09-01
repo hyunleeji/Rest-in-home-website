@@ -4,7 +4,10 @@ header {
     align-items: center;
     position: relative;
 }
-.head h1, .logo h1{
+header a{
+    z-index: 999;
+}
+.headlogo, .logo h1{
     font-size: 1.5rem;
     border: 1px solid #66cdaa;
     padding: 1rem;
@@ -117,7 +120,7 @@ header {
 }
 .slider img {
     position: absolute;
-    height: 63vh;
+    height: 59vh;
     width: calc(73vw - 200px);
     right: 0;
 }
@@ -262,12 +265,12 @@ i {
     position: relative;
     left: 31%;
     height: 100%;
-    top: 10%;
+    top: 0%;
     font-size: 1.5rem;
     line-height: 3.7rem;
     transform: translateY(-57px);
 }
-.menuTeb::before {
+/* .menuTeb::before {
     content: "";
     display: block;
     width: 0px;
@@ -292,7 +295,7 @@ i {
     background-color: #3f320d;
     animation: lineMove 0.5s 0.3s;
     animation-fill-mode: both;
-}
+} */
 .menuTeb li {
     left: 15%;
     position: relative;
@@ -327,7 +330,7 @@ i {
 }
 .itemsec {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: 15rem 0px;
 }
 .itemsec li {
@@ -417,6 +420,7 @@ i {
     position: relative;
     display: flex;
     align-items: center;
+    bottom: -100px;
 }
 .scrollTop i {
     animation: imgAnimation 1.5s infinite ease-out;
@@ -699,9 +703,9 @@ i {
     .menuInfo {
         max-width: 800px;
     }
-    .menuTeb::before {
+    /* .menuTeb::before {
         left: -50px;
-    }
+    } */
     .allmenu a {
         font-size: 2rem;
     }

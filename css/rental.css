@@ -1,0 +1,293 @@
+/* .allRental {
+    height: 100vh;
+} */
+.rental {
+    width: calc(100% - 200px);
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 30px 60px 0px rgb(28 28 32 / 8%);
+    padding: 20px;
+    overflow-x: auto;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.rental a {
+    background-size: cover;
+    /* background-image: url(../images/bg_2depth.png); */
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    width: 180px;
+    height: 180px;
+    background-position-x: 62%;
+}
+.rental a:nth-child(1) {
+    background-image: url(../images/img-1.png);
+}
+.rental a:nth-child(2) {
+    background-image: url(../images/img-2.png);
+}
+.rental a:nth-child(3) {
+    background-image: url(../images/img-3.png);
+    background-position-x: 57%;
+}
+.rental a:nth-child(4) {
+    background-image: url(../images/img-4.png);
+    background-position-x: 59%;
+}
+.rental a:nth-child(5) {
+    background-image: url(../images/img-5.png);
+}
+.rental a {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-radius: 20px;
+}
+.rental a:hover {
+    background-color: #0c9164;
+    transition: background-color 0.5s, box-shadow 0.5s;
+    box-shadow: 0px 30px 60px 0px rgb(13 92 171 / 25%);
+    z-index: 30;
+    color: #fff;
+}
+.rental span {
+    transform: translateY(-10px);
+}
+.quanTop {
+    display: flex;
+    margin: 4rem 0;
+    align-items: center;
+}
+.quanTop > span {
+    margin-right: auto;
+}
+.quanTop strong {
+    color: #0c9164;
+}
+.wrapSelect {
+    display: inline-block;
+    min-width: 250px;
+    height: 50px;
+    position: relative;
+    z-index: 40;
+}
+.wrapSelect > div {
+    border-radius: 25px;
+    box-shadow: 0px 10px 20px 0px rgb(28 28 32 / 8%);
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    /* overflow: hidden; */
+    transition: all 0.5s;
+}
+.wrapSelect > div > span {
+    display: block;
+    padding-left: 30px;
+    line-height: 50px;
+    position: relative;
+    cursor: pointer;
+}
+.wrapSelect > div > div {
+    padding: 20px 15px;
+    border-top: 1px #f6f7f8 solid;
+    transition: all 0.5s;
+    display: none;
+    background-color: #fff;
+    border-radius: 7%;
+    position: relative;
+    top: -16px;
+} 
+.wrapSelect > div > div > ul {
+    height: 220px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.wrapSelect > div > div > ul > li {
+    line-height: 44px;
+    color: #6e6e75;
+    font-size: 1.1em;
+    letter-spacing: -0.04em;
+    cursor: pointer;
+    transition: all 0.5s;
+    font-weight: 700;
+}
+.wrapSelect > div > div > ul > li:hover {
+    color: #66cdaa;
+    font-weight: 700;
+}
+.wrapSelect > div > span > strong {
+    margin-right: 3.5rem;
+}
+.rentalItem {
+    display: flex;
+    flex-wrap: wrap;
+}
+.rentalList {
+    width: calc(25% - 40px);
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: calc(120px / 3);
+    box-shadow: 0px 40px 80px 0px rgb(28 28 32 / 8%);
+    background-color: #fff;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+.rentalList {
+    background-image: url(../images/list-2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.rentalList:nth-child(2) {
+    background-image: url(../images/item-2.JPG);
+}
+.rentalList:nth-child(3) {
+    background-image: url(../images/item-3.JPG);
+}
+.rentalList:nth-child(4) {
+    background-image: url(../images/item-4.JPG);
+}
+.rentalList:nth-child(5) {
+    background-image: url(../images/item-5.JPG);
+}
+.rentalList:nth-child(6) {
+    background-image: url(../images/item-6.JPG);
+}
+.rentalList:nth-child(7) {
+    background-image: url(../images/item-7.JPG);
+}
+.rentalList span {
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.rentalList i {
+    font-size: 0.8rem;
+    margin: 1rem 0;
+    color: #6e6e75;
+}
+.rentalList strong {
+    color: #0d5cab;
+}
+.itemList {
+    padding: 1rem;
+    height: 100%;
+}
+.itemList:hover {
+    background-color: rgb(187 187 187 / 45%);
+}
+.itemList:hover > .listHover a {
+    opacity: 1;
+}
+/* .itemList {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 360px;
+    padding-bottom: 100%;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: top 30% center;
+} */
+/* .itemList :hover {
+    background-color: aqua;
+} */
+.itemList a {
+    display: flex;
+    flex-direction: column;
+    padding-top: 100%;
+    height: 100%;
+    transition: all 0.5s;
+    position: relative;
+}
+.listHover div {
+    position: absolute;
+    top: 280px;
+    top: 53%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    max-width: 460px;
+    margin-left: auto;
+    margin-right: auto;
+    width: calc(100% - 60px);
+}
+.listHover div a{
+    margin: 0 5px;
+    width: 100%;
+    max-width: 225px;
+    border: 2px #fff solid;
+    color: #0d5cab;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+    height: 50px;
+    line-height: 46px;
+    font-size: 16px;
+    border-radius: 25px;
+    padding-top: 0;
+    opacity: 0;
+    /* background-color: #fff; */
+}
+.listHover div a::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+@media screen and (max-width: 960px) {
+    .listHover a {
+        font-size: 10px;
+    }
+    .listHover div {
+        top: 39%;
+    }
+    .listHover div a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        font-size: 0.6rem;
+    }
+    .rentalList span {
+        font-size: 0.8rem;
+    }
+    .rentalList i {
+        font-size: 0.7rem;
+    }
+    .rentalList strong {
+        font-size: 0.9rem;
+    }
+}
+@media screen and (max-width: 740px) {
+    .rentalList {
+        width: calc(25% - -10px);
+    }
+    .rental a {
+        height: 105px;
+    }
+    .rental span {
+        font-size: 0.8rem;
+    }
+    .listHover div {
+        width: calc(100% - 20px);
+    }
+}
+@media screen and (max-width: 500px) {
+    .rental {
+        width: calc(100% - 20px); 
+        margin: 5rem 0;
+    }
+    .rentalList {
+        width: calc(25% - -60px);
+    }
+}

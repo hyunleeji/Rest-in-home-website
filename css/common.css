@@ -27,12 +27,15 @@ table {
 input:focus {
 	outline:none;
 }
-body {
-	/* background-color: teal; */
+section {
+	max-width: 1500px;
+	margin: 0 auto;
 }
-
-  /*****************************************
-  *  --------------------------------------*
-  *  Slick                                 *
-  *  --------------------------------------*
-  *****************************************/
+.allvh {
+	height: 100vh;
+}
+a { text-decoration: none; cursor: pointer; }
+a:hover { text-decoration: none; color: inherit; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
+a:visited { color: inherit;}

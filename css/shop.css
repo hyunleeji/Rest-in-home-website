@@ -1,0 +1,32 @@
+.shopMap h1 {
+    border: 1px solid #66cdaa;
+    border-radius: 30px;
+    margin: 0 auto;
+    width: 30%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #66cdaa;
+}
+.dirc {
+    display: flex;
+    margin-bottom: 0.5rem;
+}
+.dirc i  {
+    display: flex;
+    justify-content: center;
+    width: 0;
+    font-size: 1.5rem;
+}
+.dirc span  {
+    padding: 0 1.5rem;
+}
+@media screen and (max-width: 960px) {
+    .shopMap h1 {
+        width: 80%;
+    }
+    .dirction {
+        margin-left: 3rem;
+    }
+}
